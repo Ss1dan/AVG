@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVG</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo"><a href="main.html"><img src="imgs/Logotipe.png"></a></div>
+                <div class="div">
+                    <a href="main.html" class="div-link active">Главная</a>
+                    <a href="portfolio.html" class="div-link">Портфолио</a>
+                    <a href="vakansii.html" class="div-link">Вакансии</a>
+                    <a href="contacts.html" class="div-link">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- Слайдер -->
+<section class="slider">
+    <div class="slider-container">
+        <!-- Стрелка назад -->
+        <button class="slider-arrow prev-arrow">&#10094;</button>
+        
+        <div class="slide active" style="background-image: url(imgs/slide-1.png);">
+            <div class="slide-content">
+                <h1>Создаем игры с душой</h1>
+                <p>От идеи до релиза - делимся каждым этапом разработки</p>
+                <a href="#about" class="btn">Узнать больше</a>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url(imgs/slide-2.png);">
+            <div class="slide-content">
+                <h1>Процесс разработки</h1>
+                <p>Кодинг, текстуринг, анимация - все этапы в нашем блоге</p>
+                <a href="portfolio.html" class="btn">Перейти</a>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url(imgs/slide-3.png);">
+            <div class="slide-content">
+                <h1>Присоединяйтесь к команде</h1>
+                <p>Ищем талантливых разработчиков для новых проектов</p>
+                <a href="vakansii.html" class="btn">Вакансии</a>
+            </div>
+        </div>
+        
+        <!-- Стрелка вперед -->
+        <button class="slider-arrow next-arrow">&#10095;</button>
+    </div>
+</section>
+
+    <!-- О нас -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">О AVG</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>AVG - это сообщество разработчиков игр, где мы делимся своим опытом и процессом создания игр от идеи до релиза.</p>
+                    <p>В нашей группе ВК и Телеграм мы подробно рассказываем о каждом этапе разработки: кодинге, текстурировании, анимации и многом другом.</p>
+                    <div class="social-links">
+                        <a href="https://vk.com/club228997299" class="social-link vk">ВКонтакте</a>
+                        <a href="https://t.me/+PtRwC2lnAChiMWZi" class="social-link tg">Телеграм</a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="imgs/animation_maus.png" width="500px" height="300px" alt="Процесс разработки игры" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Наши проекты -->
+    <section class="projects">
+        <div class="container">
+            <h2 class="section-title">Наши проекты</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="imgs/coding_cat.png" width="350px" height="200px" alt="Проект 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Прятки с барсиком</h3>
+                        <p>Платформер с уникальной механикой пряток</p>
+                        <a href="portfolio.html" class="btn btn-small">Подробнее</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="imgs/labirint_smerti.jpg" width="350px" height="200px" alt="Проект 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Лабиринт Смерти x_x</h3>
+                        <p>Головоломка с элементами квеста</p>
+                        <a href="portfolio.html" class="btn btn-small">Подробнее</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="imgs/visilica.jpg" width="350px" height="200px" alt="Проект 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Висилица</h3>
+                        <p>Головоломка с элементами мультиплеера</p>
+                        <a href="portfolio.html" class="btn btn-small">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Вакансии -->
+    <section class="vacancies">
+        <div class="container">
+            <h2 class="section-title">Присоединиться к команде</h2>
+            <div class="vacancies-grid">
+                <div class="vacancy-card">
+                    <h3>Unity разработчик</h3>
+                    <p>Ищем опытного Unity-разработчика для работы над новым проектом.</p>
+                    <ul class="vacancy-requirements">
+                        <li>Опыт работы с Unity от 2 лет</li>
+                        <li>Знание C#</li>
+                        <li>Опыт работы с Git</li>
+                    </ul>
+                    <a href="vakansii.html" class="btn btn-small">Откликнуться</a>
+                </div>
+                <div class="vacancy-card">
+                    <h3>2D художник</h3>
+                    <p>Требуется художник для создания стилизованных 2D-ассетов.</p>
+                    <ul class="vacancy-requirements">
+                        <li>Опыт работы в Photoshop/Illustrator</li>
+                        <li>Понимание принципов анимации</li>
+                        <li>Портфолио с примерами работ</li>
+                    </ul>
+                    <a href="vakansii.html" class="btn btn-small">Откликнуться</a>
+                </div>
+                <div class="vacancy-card">
+                    <h3>Геймдизайнер</h3>
+                    <p>Ищем креативного геймдизайнера для разработки механик.</p>
+                    <ul class="vacancy-requirements">
+                        <li>Опыт проектирования механик</li>
+                        <li>Умение работать в команде</li>
+                        <li>Примеры реализованных проектов</li>
+                    </ul>
+                    <a href="vakansii.html" class="btn btn-small">Откликнуться</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contacts">
+        <div class="container">
+            <h2 class="section-title">Свяжитесь с нами</h2>
+            <div class="contacts-content">
+                <form class="contact-form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Ваше сообщение" required></textarea>
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Наши контакты</h3>
+                    <p>Email: <a href="mailto:avg.gamedev@gmail.com">avg.gamedev@gmail.com</a></p>
+                    <p>Телефон: <a href="tel:+79028852540">+7 (902) 885-25-40</a></p>
+                    <div class="social-icons">
+                        <a href="https://vk.com/club228997299"><img src="imgs/vk.png" width="40px" height="40px"></a>
+                        <a href="https://t.me/+PtRwC2lnAChiMWZi"><img src="imgs/tg.png" width="40px" height="40px"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo"><a href="main.html"><img src="imgs/Logotipe.png"></a></div>
+                <div class="footer-links">
+                    <a href="main.html">Главная</a>
+                    <a href="portfolio.html">Портфолио</a>
+                    <a href="vakansii.html">Вакансии</a>
+                    <a href="contacts.html">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
