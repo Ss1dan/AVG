@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AVG - Галерея проекта</title>
+    <title>AVG</title>
     <link rel="stylesheet" href="css/project.css">
 </head>
 <body>
@@ -28,7 +28,7 @@
             <div class="project-details">
                 <div class="project-header">
                     <h1 class="project-title">Прятки с барсиком</h1>
-                    <span class="project-category">Игра</span>
+                    <span class="project-category">Платформер</span>
                 </div>
                 
                 <div class="project-meta">
@@ -82,33 +82,32 @@
             </div>
             
             <!-- Отзывы -->
-            <div class="reviews-section">
-                <div class="review-item">
-                    <div class="review-header">
-                        <span class="review-author">Иван Петров</span>
-                        <span class="review-date">20.11.2025</span>
+            <div class="reviews-section"></div>
+            
+            <!-- Форма для добавления отзыва -->
+            <div class="add-review">
+                <h3>Добавить отзыв</h3>
+                <form id="review-form" class="review-form">
+                    <div class="form-group">
+                        <label for="review-name">Ваше имя:</label>
+                        <input type="text" id="review-name" required>
                     </div>
-                    <div class="review-rating">* * * * *</div>
-                    <p class="review-text">Отличная игра! Так тяжело найти мышей. Графика приятная, управление отзывчивое. Особенно понравился мультиплеер - очень весело играть с друзьями.</p>
-                </div>
-                
-                <div class="review-item">
-                    <div class="review-header">
-                        <span class="review-author">Анна Смирнова</span>
-                        <span class="review-date">18.11.2025</span>
+                    <div class="form-group">
+                        <label for="review-text">Ваш отзыв:</label>
+                        <textarea id="review-text" rows="4" required></textarea>
                     </div>
-                    <div class="review-rating">* * * *</div>
-                    <p class="review-text">Очень милая и увлекательная игра. Барсик просто очарователен! Некоторые уровни довольно сложные, но это делает прохождение еще более удовлетворительным. Жду новых обновлений!</p>
-                </div>
-                
-                <div class="review-item">
-                    <div class="review-header">
-                        <span class="review-author">Дмитрий Козлов</span>
-                        <span class="review-date">16.11.2025</span>
+                    <div class="form-group">
+                        <label for="review-rating">Оценка:</label>
+                        <select id="review-rating">
+                            <option value="5">5 звезд</option>
+                            <option value="4">4 звезды</option>
+                            <option value="3">3 звезды</option>
+                            <option value="2">2 звезды</option>
+                            <option value="1">1 звезда</option>
+                        </select>
                     </div>
-                    <div class="review-rating">* * * * *</div>
-                    <p class="review-text">Как фанат платформеров, могу сказать, что эта игра выделяется на фоне других. Сочетание платформера и пряток работает потрясающе хорошо. Рекомендую всем любителям жанра!</p>
-                </div>
+                    <button type="submit" class="btn">Отправить отзыв</button>
+                </form>
             </div>
         </div>
     </section>
@@ -127,5 +126,6 @@
             </div>
         </div>
     </footer>
+    <script src="JavaScript/project.js"></script>
 </body>
 </html>
